@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
 body {
   margin: 0;
+  padding: 0;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -12,11 +13,12 @@ body {
 nav {
   margin: 0.2em 0.2em;
   padding-top: 1.5em;
+
   height: 60px;
   background-color: rgb(210, 244, 255);
 }
 
-nav a {
+.left-nav a {
   color: rgb(233, 255, 254);
   font-size: 20px;
   margin-left: 0.5em;
@@ -25,12 +27,42 @@ nav a {
   border-radius: 5em;
 }
 
+.left-nav {
+  float: left;
+  padding-top: 0.5em;
+}
+
+.right-nav {
+  float: right;
+  height: 3em;
+  width: 7em;
+  display: flex;
+}
+
 nav a:hover {
   color: rgb(230, 221, 173);
 }
 
 a {
   text-decoration: none;
+}
+
+@keyframes link-image-animation {
+  to {
+    margin-top: 0.2em;
+    box-shadow: 0px 5px 5px rgb(141, 141, 141);
+  }
+}
+
+.link-image {
+  margin-right: 0.5em;
+  width: 35px;
+  border-radius: 20%;
+}
+
+.link-image:hover {
+  animation: link-image-animation 0.2s;
+  animation-fill-mode: forwards;
 }
 
 h1 {
