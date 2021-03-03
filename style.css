@@ -105,6 +105,14 @@ h1 {
   box-shadow: 0px 5px 5px rgb(141, 141, 141);
 }
 
+.contact-link {
+  color: #735751;
+}
+
+.contact-link:hover {
+  color: #fdb58b;
+}
+
 .info-container {
   display: flex;
   margin-top: -20px;
@@ -138,5 +146,5 @@ footer p {
 }
 
 footer a:hover {
-  color: #ed7d3a;
+  color: #fdb58b;
 }
