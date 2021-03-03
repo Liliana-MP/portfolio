@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+
+@keyframes link-image-animation {
+  to {
+    margin-top: 0.2em;
+    box-shadow: 0px 5px 5px rgb(141, 141, 141);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,11 +20,11 @@ body {
 }
 
 nav {
-  margin: 0.2em 0.2em;
   padding-top: 1.5em;
 
   height: 60px;
   background-color: #d1ccdc;
+  box-shadow: 0px 3px 3px rgb(141, 141, 141);
 }
 
 .left-nav a {
@@ -41,18 +49,11 @@ nav {
 }
 
 nav a:hover {
-  color: rgb(230, 221, 173);
+  color: #fdb58b;
 }
 
 a {
   text-decoration: none;
-}
-
-@keyframes link-image-animation {
-  to {
-    margin-top: 0.2em;
-    box-shadow: 0px 5px 5px rgb(141, 141, 141);
-  }
 }
 
 .link-image {
@@ -91,17 +92,26 @@ h1 {
 }
 
 .contact-card-container {
+  margin-top: 1em;
   display: flex;
   justify-content: center;
 }
 
 .contact-card {
-  text-align: center;
-  margin-top: 1em;
-  flex-direction: row;
+  text-align: left;
+  margin-top: 0.5em;
   background-color: #ece3e6;
   padding: 0.9em 1.5em;
   box-shadow: 0px 5px 5px rgb(141, 141, 141);
+}
+
+.info-container {
+  display: flex;
+  margin-top: -20px;
+}
+
+.contact-icon {
+  margin-right: 0.5em;
 }
 
 iframe {
@@ -120,4 +130,13 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+footer p {
+  margin-left: 1em;
+  font-size: 13px;
+}
+
+footer a:hover {
+  color: #ed7d3a;
 }
