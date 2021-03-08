@@ -7,33 +7,39 @@
   }
 }
 
+@keyframes nav-hover-animation {
+  to {
+    color: #f80e54;
+    box-shadow: 1px 1px 3px gray;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background-color: #f5edf0;
+  background-color: #dbd1d5;
 }
 
 .active {
   font-weight: bold;
-  box-shadow: 0px 5px 5px rgb(110, 110, 110);
+  box-shadow: 0px 3px 5px rgb(110, 110, 110);
 }
 
 nav {
   padding-top: 1.5em;
 
   height: 60px;
-  background-color: #d1ccdc;
-  box-shadow: 0px 3px 3px rgb(141, 141, 141);
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgb(141, 141, 141);
 }
 
 .left-nav a {
-  color: rgb(233, 255, 254);
+  color: black;
   font-size: 20px;
   margin-left: 0.5em;
   padding: 0.5em 0.7em;
-  background-color: #424c55;
-  border-radius: 5em;
+  border-radius: 0.3em;
 }
 
 .left-nav {
@@ -48,8 +54,9 @@ nav {
   display: flex;
 }
 
-nav a:hover {
-  color: #fdb58b;
+.left-nav a:hover {
+  animation: nav-hover-animation 0.2s;
+  animation-fill-mode: forwards;
 }
 
 a {
@@ -77,7 +84,18 @@ h1 {
   justify-content: center;
 }
 
+.project-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10em;
+}
+
 .project-list-container {
+  margin-top: 2em;
+  width: 50%;
+  padding-bottom: 5em;
+  background-color: #ece3e6;
+  box-shadow: 0px 5px 5px rgb(141, 141, 141);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -87,7 +105,7 @@ h1 {
 .project-image {
   margin: 0.5em 1em;
   width: 30%;
-  height: 30%;
+  height: 100%;
   box-shadow: 4px 5px 5px rgb(141, 141, 141);
 }
 
@@ -109,7 +127,7 @@ h1 {
 }
 
 .contact-link:hover {
-  color: #fdb58b;
+  color: #f80e54;
 }
 
 .info-container {
@@ -136,15 +154,21 @@ h1 {
 }
 
 .about-card {
+  padding-left: 2em;
+  padding-right: 2em;
   margin-top: 1.5em;
   position: absolute;
   background-color: #ece3e6;
-  height: 80%;
-  width: 70%;
+  height: 70%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 5px 5px rgb(141, 141, 141);
+}
+
+.about-text-container {
+  text-align: center;
 }
 
 iframe {
@@ -159,7 +183,6 @@ ul {
 }
 
 footer {
-  background-color: #f5edf0;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -176,6 +199,5 @@ footer a:hover {
 }
 
 .footer-line {
-  color: black;
-  bottom: 0;
+  border: 0.2px solid rgb(66, 68, 68);
 }
